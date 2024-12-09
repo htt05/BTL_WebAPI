@@ -1,0 +1,38 @@
+﻿<div class="header-top_area bg--white_smoke">
+    <div class="container">
+        <div class="row">
+            <!-- Begin Header Information Area -->
+            <div class="col-lg-3 col-md-6 col-sm-4">
+                <div class="header-info_area">
+                    @if (ViewBag.User.AccountName == null)
+                    {
+                        <span>Wellcome to Jobaria!</span>
+                    }
+                    else
+                    {
+                        <a asp-action="Index" asp-controller="Account" >Wellcome @ViewBag.User.AccountName!</a>
+                    }
+                </div>
+            </div>
+            <!-- Header Information Area End Here -->
+            <!-- Begin Header Top Right Area -->
+            <div class="col-lg-9 col-md-6 col-sm-8">
+                <div class="ht-right">
+                    <div class="ht-menu">
+                        <ul>
+                            @if (ViewBag.User.AccountName == null)
+                            {
+                                <li><a asp-action="Index" asp-controller="Login"><i class="fa fa-user"></i>Login</a></li>
+                            }
+                            else
+                            {
+                                <li><a asp-action="Index" asp-controller="Account" asp-route-accountId="@ViewBag.User.AccountId"><i class="fa fa-user"></i>Your account</a></li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Header Top Right Area End Here -->
+        </div>
+    </div>
+</div>

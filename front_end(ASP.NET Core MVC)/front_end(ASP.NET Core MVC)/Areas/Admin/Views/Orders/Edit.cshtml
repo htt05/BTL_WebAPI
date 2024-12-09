@@ -1,0 +1,158 @@
+﻿@model front_end_ASP.NET_Core_MVC_.Models.DataModels.Order
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+<section class="content mb-2">
+    <!-- Default box -->
+    <div class="box">
+        <div class="box-body with-border">
+            <div class="row">
+                <div class="col-md-6">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th class="col-md-4">Customer Information</th>
+                                <th class="col-md-8"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>@Html.DisplayNameFor(model => model.Account)</td>
+                                <td>@Html.DisplayFor(model => model.Account.AccountName)</td>
+                            </tr>
+                            <tr>
+                                <td>@Html.DisplayNameFor(model => model.Created_at)</td>
+                                <td>@Html.DisplayFor(model => model.Created_at)</td>
+                            </tr>
+                            <tr>
+                                <td>@Html.DisplayNameFor(model => model.OrderId)</td>
+                                <td>@Html.DisplayFor(model => model.OrderId)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th class="col-md-4">Shipping Information</th>
+                                <th class="col-md-8"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>@Html.DisplayNameFor(model => model.Receiver)</td>
+                                <td>@Html.DisplayFor(model => model.Receiver)</td>
+                            </tr>
+                            <tr>
+                                <td>@Html.DisplayNameFor(model => model.PhoneNumber)</td>
+                                <td>@Html.DisplayFor(model => model.PhoneNumber)</td>
+                            </tr>
+                            <tr>
+                                <td>@Html.DisplayNameFor(model => model.Address)</td>
+                                <td>@Html.DisplayFor(model => model.Address)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-md-12">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th class="col-md-1">No</th>
+                                <th class="col-md-3">Product Name</th>
+                                <th class="col-md-2">Price</th>
+                                <th class="col-md-2">Quantity</th>
+                                <th class="col-md-2">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in ViewBag.OrderDetails)
+                            {
+                                <tr>
+                                    <td>@item.OrderDetailId</td>
+                                    <td>@item.Product.ProductName</td>
+                                    <td><b class="text-red">@($"{item.Product.SalePrice:N2}")$</b></td>
+                                    <td>@item.Quantity</td>
+                                    <td><b class="text-red">@($"{(item.Product.SalePrice * item.Quantity):N2}")$</b></td>
+                                </tr>
+                            }
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="4"><b>Total</b></td>
+                                <td>
+                                    <b class="text-red">
+                                        @String.Format("{0:N2}", Model.ToltalPrice)$ đ
+                                    </b>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mt-3">
+                    <label>@Html.DisplayNameFor(model => model.Note):</label>
+                    <p>@Html.DisplayFor(model => model.Note)</p>
+                </div>
+                <div class="col-lg-4 mt-3">
+                    <form asp-action="Edit" asp-route-id="@Model?.OrderId">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <input type="hidden" asp-for="OrderId" />
+                        <input type="hidden" asp-for="Receiver" />
+                        <input type="hidden" asp-for="PhoneNumber" />
+                        <input type="hidden" asp-for="Address" />
+                        <input type="hidden" asp-for="ToltalPrice" />
+                        <input type="hidden" asp-for="Note" />
+                        <input type="hidden" asp-for="Created_at" />
+                        <input type="hidden" asp-for="Account" />
+                        <input type="hidden" asp-for="AccountId" />
+                        <div class="form-row align-items-center">
+                            <div class="col-auto my-1">
+                                <select asp-for="Status" class="custom-select mr-sm-2" asp-items="ViewBag.options" id="statusSelect"></select>
+                            </div>
+                            <div class="col-auto my-1">
+                                <input type="submit" value="Update" class="btn btn-primary" />
+                            </div>
+                            <div class="col-auto my-1">
+                                <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const statusSelect = document.getElementById("statusSelect");
+
+        statusSelect.addEventListener("change", function () {
+            const selectedValue = parseInt(this.value, 10);
+            const options = Array.from(this.options);
+
+            options.forEach(option => {
+                const optionValue = parseInt(option.value, 10);
+
+                if (optionValue <= selectedValue) {
+                    option.style.display = "none";
+                } else {
+                    option.style.display = "block";
+                }
+            });
+        });
+
+        // Trigger change event on page load to filter options initially
+        statusSelect.dispatchEvent(new Event("change"));
+    });
+</script>
+
+

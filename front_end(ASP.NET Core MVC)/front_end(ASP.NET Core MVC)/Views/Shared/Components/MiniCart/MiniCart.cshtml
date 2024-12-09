@@ -1,0 +1,75 @@
+﻿@model IEnumerable<front_end_ASP.NET_Core_MVC_.Models.DataModels.Cart>
+
+<div class="col-lg-2 col-md-3 col-sm-6 col-6 order-1 order-lg-3 order-sm-1">
+    <div class="hm-minicart_area">
+        <ul>
+            <li>
+                <a asp-action="Index" asp-controller="Cart">
+                    <div class="minicart-icon">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="item-count" id="CoutCartItem">@ViewBag.CoutCartItem</span>
+                    </div>
+                    <div class="minicart-text"><span>My Cart</span></div>
+                    <div class="item_total"><span id="TotalCart">$@String.Format("{0:N2}", ViewBag.TotalCart)</span></div>
+                </a>
+                <ul class="minicart-body">
+                    @foreach(var c in Model)
+                    {
+                        <li class="minicart-item_area">
+                            <div class="minicart-single_item">
+                                <div class="minicart-img">
+                                    <a href="single-product.html">
+                                        <img src="@c.Picture" alt="JB's Product Image" width="70px">
+                                    </a>
+                                    <span class="product-quantity">x @c.Quantity</span>
+                                </div>
+                                <div class="minicart-content">
+                                    <div class="product-name">
+                                        <h6>
+                                            <a href="single-product.html">
+                                                @c.Name
+                                            </a>
+                                        </h6>
+                                    </div>
+                                    <div class="price-box">
+                                        <span class="new-price">$@String.Format("{0:N2}", c.Price)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    }
+                    <li>
+                        <div class="price_content">
+                            <div class="cart-subtotals">
+                                <div class="products subtotal-list">
+                                    <span class="label">Subtotal</span>
+                                    <span class="value">$@String.Format("{0:N2}", ViewBag.TotalCart)</span>
+                                </div>
+                                <div class="shipping subtotal-list">
+                                    <span class="label">Shipping</span>
+                                    <span class="value">$7.00</span>
+                                </div>
+                                <div class="tax subtotal-list">
+                                    <span class="label">Taxes</span>
+                                    <span class="value">$0.00</span>
+                                </div>
+                                <div class="cart-total subtotal-list">
+                                    <span class="label">Total</span>
+                                    <span class="value">$@String.Format("{0:N2}", ViewBag.TotalCart)</span>
+                                </div>
+                            </div>
+                            <div class="minicart-button">
+                                <a class="jb-btn jb-btn_fullwidth" asp-action="Create" asp-controller="Orders">Checkout</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- Begin JB's Offcanvas Area -->
+    <a href="#" class="menu-btn color--white">
+        <i class="fa fa-bars"></i>
+    </a>
+    <!-- JB's Offcanvas Area End Here -->
+</div>

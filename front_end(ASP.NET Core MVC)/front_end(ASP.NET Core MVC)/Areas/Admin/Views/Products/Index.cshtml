@@ -1,0 +1,110 @@
+﻿@model X.PagedList.IPagedList<front_end_ASP.NET_Core_MVC_.Models.DataModels.Product>
+@using X.PagedList.Mvc.Core
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!-- Content Header -->
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-6">
+                <h1>Index</h1>
+                <a asp-action="Create" class="btn btn-outline-secondary">Create New</a>
+                <form asp-action="Index" method="get" class="form-inline" asp-controller="Products">
+                    <input type="hidden" name="searchName" value="@ViewBag.searchName" />
+                    <div class="form-group">
+                        <label for="categoryId" class="mr-2">Chọn Danh Mục:</label>
+                        <select id="categoryId" class="form-control" asp-items="ViewBag.categoryId" name="categoryId" onchange="this.form.submit()"></select>
+                    </div>
+                </form>
+            </div>
+            <div class="col-6">
+                <form class="form-inline float-right" asp-action="Index" asp-controller="Products" asp-area="Admin" method="get">
+                    <input type="hidden" name="categoryId" value="@ViewBag.id" />
+                    <div class="input-group input-group-sm">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search" name="searchName" value="@ViewBag.searchName">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div><p>@TempData["success"]</p></div>
+    </div>
+</div>
+<!-- /.content-header -->
+<!-- Main content -->
+<div class="container-fluid">
+    @if (Model != null && Model.Any())
+    {
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Picture</th>
+                    <th>Product ID</th>
+                    <th>Product Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Sale Price</th>
+                    <th>Discount</th>
+                    <th>Product Count</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            <img src="@Html.DisplayFor(modelItem => item.Picture)" alt="Picture" width="100px" />
+                        </td>
+                        <td>@Html.DisplayFor(modelItem => item.ProductId)</td>
+                        <td>@Html.DisplayFor(modelItem => item.ProductName)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Category.CategoryName)</td>
+                        <td>@String.Format("{0:N2}", item.Price)$</td>
+                        <td>@String.Format("{0:N2}", item.SalePrice)$</td>
+                        <td>@Html.DisplayFor(modelItem => item.Discount)</td>
+                        <td>@Html.DisplayFor(modelItem => item.ProductCount)</td>
+                        <td>
+                            @if (item.Status == 0)
+                            {
+                                <span class="badge badge-warning">Sold out</span>
+                            }
+                            else if (item.Status == 1)
+                            {
+                                <span class="badge badge-info">Available</span>
+                            }
+                        </td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <a asp-action="Edit" asp-route-id="@item.ProductId" class="btn btn-outline-success">Edit</a>
+                                <a asp-action="Details" asp-route-id="@item.ProductId" class="btn btn-outline-info">Detail</a>
+                                <a asp-action="Delete" asp-route-id="@item.ProductId" class="btn btn-outline-danger">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No products available.</p>
+    }
+    <div class="d-flex justify-content-center">
+    @Html.PagedListPager(
+    Model,
+                 page => Url.Action("Index", "Products", new { page = page, searchName = ViewBag.searchName, CategoryId = ViewBag.id }),
+    new PagedListRenderOptions
+    {
+    LiElementClasses = new[] { "page-item" },
+    PageClasses = new[] { "page-link", "btn", "btn-primary" }
+    })
+    </div>
+</div>

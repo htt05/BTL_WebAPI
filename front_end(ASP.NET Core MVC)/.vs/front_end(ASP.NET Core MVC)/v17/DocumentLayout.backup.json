@@ -1,0 +1,257 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Bkap T\u00E0i li\u1EC7u\\SEM3\\Web API Service\\BTL Web API Service(ASP.Net Core)\\front_end(ASP.NET Core MVC)\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{686BA66F-8BA2-4138-A709-32B881CA59FD}|front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC).csproj|d:\\bkap t\u00E0i li\u1EC7u\\sem3\\web api service\\btl web api service(asp.net core)\\front_end(asp.net core mvc)\\front_end(asp.net core mvc)\\areas\\admin\\views\\shared\\layout\\aside.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{686BA66F-8BA2-4138-A709-32B881CA59FD}|front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC).csproj|solutionrelative:front_end(asp.net core mvc)\\areas\\admin\\views\\shared\\layout\\aside.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{686BA66F-8BA2-4138-A709-32B881CA59FD}|front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC).csproj|d:\\bkap t\u00E0i li\u1EC7u\\sem3\\web api service\\btl web api service(asp.net core)\\front_end(asp.net core mvc)\\front_end(asp.net core mvc)\\wwwroot\\admin\\dist\\img\\avatar2.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{686BA66F-8BA2-4138-A709-32B881CA59FD}|front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC).csproj|solutionrelative:front_end(asp.net core mvc)\\wwwroot\\admin\\dist\\img\\avatar2.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{686BA66F-8BA2-4138-A709-32B881CA59FD}|front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC).csproj|d:\\bkap t\u00E0i li\u1EC7u\\sem3\\web api service\\btl web api service(asp.net core)\\front_end(asp.net core mvc)\\front_end(asp.net core mvc)\\areas\\admin\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{686BA66F-8BA2-4138-A709-32B881CA59FD}|front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC).csproj|solutionrelative:front_end(asp.net core mvc)\\areas\\admin\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{686BA66F-8BA2-4138-A709-32B881CA59FD}|front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC).csproj|d:\\bkap t\u00E0i li\u1EC7u\\sem3\\web api service\\btl web api service(asp.net core)\\front_end(asp.net core mvc)\\front_end(asp.net core mvc)\\models\\dto\\productimgimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{686BA66F-8BA2-4138-A709-32B881CA59FD}|front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC).csproj|solutionrelative:front_end(asp.net core mvc)\\models\\dto\\productimgimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{686BA66F-8BA2-4138-A709-32B881CA59FD}|front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC).csproj|d:\\bkap t\u00E0i li\u1EC7u\\sem3\\web api service\\btl web api service(asp.net core)\\front_end(asp.net core mvc)\\front_end(asp.net core mvc)\\areas\\admin\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{686BA66F-8BA2-4138-A709-32B881CA59FD}|front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC).csproj|solutionrelative:front_end(asp.net core mvc)\\areas\\admin\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{686BA66F-8BA2-4138-A709-32B881CA59FD}|front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC).csproj|d:\\bkap t\u00E0i li\u1EC7u\\sem3\\web api service\\btl web api service(asp.net core)\\front_end(asp.net core mvc)\\front_end(asp.net core mvc)\\models\\dto\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{686BA66F-8BA2-4138-A709-32B881CA59FD}|front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC).csproj|solutionrelative:front_end(asp.net core mvc)\\models\\dto\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{686BA66F-8BA2-4138-A709-32B881CA59FD}|front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC).csproj|d:\\bkap t\u00E0i li\u1EC7u\\sem3\\web api service\\btl web api service(asp.net core)\\front_end(asp.net core mvc)\\front_end(asp.net core mvc)\\models\\datamodels\\productimg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{686BA66F-8BA2-4138-A709-32B881CA59FD}|front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC).csproj|solutionrelative:front_end(asp.net core mvc)\\models\\datamodels\\productimg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{686BA66F-8BA2-4138-A709-32B881CA59FD}|front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC).csproj|d:\\bkap t\u00E0i li\u1EC7u\\sem3\\web api service\\btl web api service(asp.net core)\\front_end(asp.net core mvc)\\front_end(asp.net core mvc)\\models\\dto\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{686BA66F-8BA2-4138-A709-32B881CA59FD}|front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC).csproj|solutionrelative:front_end(asp.net core mvc)\\models\\dto\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{686BA66F-8BA2-4138-A709-32B881CA59FD}|front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC).csproj|d:\\bkap t\u00E0i li\u1EC7u\\sem3\\web api service\\btl web api service(asp.net core)\\front_end(asp.net core mvc)\\front_end(asp.net core mvc)\\models\\datamodels\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{686BA66F-8BA2-4138-A709-32B881CA59FD}|front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC).csproj|solutionrelative:front_end(asp.net core mvc)\\models\\datamodels\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{686BA66F-8BA2-4138-A709-32B881CA59FD}|front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC).csproj|d:\\bkap t\u00E0i li\u1EC7u\\sem3\\web api service\\btl web api service(asp.net core)\\front_end(asp.net core mvc)\\front_end(asp.net core mvc)\\models\\dto\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{686BA66F-8BA2-4138-A709-32B881CA59FD}|front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC).csproj|solutionrelative:front_end(asp.net core mvc)\\models\\dto\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{686BA66F-8BA2-4138-A709-32B881CA59FD}|front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC).csproj|d:\\bkap t\u00E0i li\u1EC7u\\sem3\\web api service\\btl web api service(asp.net core)\\front_end(asp.net core mvc)\\front_end(asp.net core mvc)\\models\\dto\\responsemessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{686BA66F-8BA2-4138-A709-32B881CA59FD}|front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC).csproj|solutionrelative:front_end(asp.net core mvc)\\models\\dto\\responsemessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{686BA66F-8BA2-4138-A709-32B881CA59FD}|front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC).csproj|d:\\bkap t\u00E0i li\u1EC7u\\sem3\\web api service\\btl web api service(asp.net core)\\front_end(asp.net core mvc)\\front_end(asp.net core mvc)\\areas\\admin\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{686BA66F-8BA2-4138-A709-32B881CA59FD}|front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC).csproj|solutionrelative:front_end(asp.net core mvc)\\areas\\admin\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{686BA66F-8BA2-4138-A709-32B881CA59FD}|front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC).csproj|d:\\bkap t\u00E0i li\u1EC7u\\sem3\\web api service\\btl web api service(asp.net core)\\front_end(asp.net core mvc)\\front_end(asp.net core mvc)\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{686BA66F-8BA2-4138-A709-32B881CA59FD}|front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC).csproj|solutionrelative:front_end(asp.net core mvc)\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{686BA66F-8BA2-4138-A709-32B881CA59FD}|front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC).csproj|d:\\bkap t\u00E0i li\u1EC7u\\sem3\\web api service\\btl web api service(asp.net core)\\front_end(asp.net core mvc)\\front_end(asp.net core mvc)\\areas\\admin\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{686BA66F-8BA2-4138-A709-32B881CA59FD}|front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC).csproj|solutionrelative:front_end(asp.net core mvc)\\areas\\admin\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 446,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "avatar2.png",
+              "DocumentMoniker": "D:\\Bkap T\u00E0i li\u1EC7u\\SEM3\\Web API Service\\BTL Web API Service(ASP.Net Core)\\front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC)\\wwwroot\\admin\\dist\\img\\avatar2.png",
+              "RelativeDocumentMoniker": "front_end(ASP.NET Core MVC)\\wwwroot\\admin\\dist\\img\\avatar2.png",
+              "ToolTip": "D:\\Bkap T\u00E0i li\u1EC7u\\SEM3\\Web API Service\\BTL Web API Service(ASP.Net Core)\\front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC)\\wwwroot\\admin\\dist\\img\\avatar2.png",
+              "RelativeToolTip": "front_end(ASP.NET Core MVC)\\wwwroot\\admin\\dist\\img\\avatar2.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-12-09T07:24:03.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Aside.cshtml",
+              "DocumentMoniker": "D:\\Bkap T\u00E0i li\u1EC7u\\SEM3\\Web API Service\\BTL Web API Service(ASP.Net Core)\\front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC)\\Areas\\Admin\\Views\\Shared\\Layout\\Aside.cshtml",
+              "RelativeDocumentMoniker": "front_end(ASP.NET Core MVC)\\Areas\\Admin\\Views\\Shared\\Layout\\Aside.cshtml",
+              "ToolTip": "D:\\Bkap T\u00E0i li\u1EC7u\\SEM3\\Web API Service\\BTL Web API Service(ASP.Net Core)\\front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC)\\Areas\\Admin\\Views\\Shared\\Layout\\Aside.cshtml*",
+              "RelativeToolTip": "front_end(ASP.NET Core MVC)\\Areas\\Admin\\Views\\Shared\\Layout\\Aside.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T07:23:36.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_LayoutAdmin.cshtml",
+              "DocumentMoniker": "D:\\Bkap T\u00E0i li\u1EC7u\\SEM3\\Web API Service\\BTL Web API Service(ASP.Net Core)\\front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC)\\Areas\\Admin\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeDocumentMoniker": "front_end(ASP.NET Core MVC)\\Areas\\Admin\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ToolTip": "D:\\Bkap T\u00E0i li\u1EC7u\\SEM3\\Web API Service\\BTL Web API Service(ASP.Net Core)\\front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC)\\Areas\\Admin\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeToolTip": "front_end(ASP.NET Core MVC)\\Areas\\Admin\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T07:23:29.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductImg.cs",
+              "DocumentMoniker": "D:\\Bkap T\u00E0i li\u1EC7u\\SEM3\\Web API Service\\BTL Web API Service(ASP.Net Core)\\front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC)\\Models\\DataModels\\ProductImg.cs",
+              "RelativeDocumentMoniker": "front_end(ASP.NET Core MVC)\\Models\\DataModels\\ProductImg.cs",
+              "ToolTip": "D:\\Bkap T\u00E0i li\u1EC7u\\SEM3\\Web API Service\\BTL Web API Service(ASP.Net Core)\\front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC)\\Models\\DataModels\\ProductImg.cs",
+              "RelativeToolTip": "front_end(ASP.NET Core MVC)\\Models\\DataModels\\ProductImg.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T07:05:36.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductImgImage.cs",
+              "DocumentMoniker": "D:\\Bkap T\u00E0i li\u1EC7u\\SEM3\\Web API Service\\BTL Web API Service(ASP.Net Core)\\front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC)\\Models\\DTO\\ProductImgImage.cs",
+              "RelativeDocumentMoniker": "front_end(ASP.NET Core MVC)\\Models\\DTO\\ProductImgImage.cs",
+              "ToolTip": "D:\\Bkap T\u00E0i li\u1EC7u\\SEM3\\Web API Service\\BTL Web API Service(ASP.Net Core)\\front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC)\\Models\\DTO\\ProductImgImage.cs",
+              "RelativeToolTip": "front_end(ASP.NET Core MVC)\\Models\\DTO\\ProductImgImage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T07:05:07.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Bkap T\u00E0i li\u1EC7u\\SEM3\\Web API Service\\BTL Web API Service(ASP.Net Core)\\front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC)\\Models\\DataModels\\Product.cs",
+              "RelativeDocumentMoniker": "front_end(ASP.NET Core MVC)\\Models\\DataModels\\Product.cs",
+              "ToolTip": "D:\\Bkap T\u00E0i li\u1EC7u\\SEM3\\Web API Service\\BTL Web API Service(ASP.Net Core)\\front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC)\\Models\\DataModels\\Product.cs",
+              "RelativeToolTip": "front_end(ASP.NET Core MVC)\\Models\\DataModels\\Product.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAADwvykAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T07:04:10.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductImage.cs",
+              "DocumentMoniker": "D:\\Bkap T\u00E0i li\u1EC7u\\SEM3\\Web API Service\\BTL Web API Service(ASP.Net Core)\\front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC)\\Models\\DTO\\ProductImage.cs",
+              "RelativeDocumentMoniker": "front_end(ASP.NET Core MVC)\\Models\\DTO\\ProductImage.cs",
+              "ToolTip": "D:\\Bkap T\u00E0i li\u1EC7u\\SEM3\\Web API Service\\BTL Web API Service(ASP.Net Core)\\front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC)\\Models\\DTO\\ProductImage.cs",
+              "RelativeToolTip": "front_end(ASP.NET Core MVC)\\Models\\DTO\\ProductImage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T07:04:08.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Image.cs",
+              "DocumentMoniker": "D:\\Bkap T\u00E0i li\u1EC7u\\SEM3\\Web API Service\\BTL Web API Service(ASP.Net Core)\\front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC)\\Models\\DTO\\Image.cs",
+              "RelativeDocumentMoniker": "front_end(ASP.NET Core MVC)\\Models\\DTO\\Image.cs",
+              "ToolTip": "D:\\Bkap T\u00E0i li\u1EC7u\\SEM3\\Web API Service\\BTL Web API Service(ASP.Net Core)\\front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC)\\Models\\DTO\\Image.cs",
+              "RelativeToolTip": "front_end(ASP.NET Core MVC)\\Models\\DTO\\Image.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T07:03:48.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "D:\\Bkap T\u00E0i li\u1EC7u\\SEM3\\Web API Service\\BTL Web API Service(ASP.Net Core)\\front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC)\\Models\\DTO\\LoginModel.cs",
+              "RelativeDocumentMoniker": "front_end(ASP.NET Core MVC)\\Models\\DTO\\LoginModel.cs",
+              "ToolTip": "D:\\Bkap T\u00E0i li\u1EC7u\\SEM3\\Web API Service\\BTL Web API Service(ASP.Net Core)\\front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC)\\Models\\DTO\\LoginModel.cs",
+              "RelativeToolTip": "front_end(ASP.NET Core MVC)\\Models\\DTO\\LoginModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T07:03:48.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ResponseMessage.cs",
+              "DocumentMoniker": "D:\\Bkap T\u00E0i li\u1EC7u\\SEM3\\Web API Service\\BTL Web API Service(ASP.Net Core)\\front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC)\\Models\\DTO\\ResponseMessage.cs",
+              "RelativeDocumentMoniker": "front_end(ASP.NET Core MVC)\\Models\\DTO\\ResponseMessage.cs",
+              "ToolTip": "D:\\Bkap T\u00E0i li\u1EC7u\\SEM3\\Web API Service\\BTL Web API Service(ASP.Net Core)\\front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC)\\Models\\DTO\\ResponseMessage.cs",
+              "RelativeToolTip": "front_end(ASP.NET Core MVC)\\Models\\DTO\\ResponseMessage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T07:03:47.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\Bkap T\u00E0i li\u1EC7u\\SEM3\\Web API Service\\BTL Web API Service(ASP.Net Core)\\front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC)\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "front_end(ASP.NET Core MVC)\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\Bkap T\u00E0i li\u1EC7u\\SEM3\\Web API Service\\BTL Web API Service(ASP.Net Core)\\front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC)\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "front_end(ASP.NET Core MVC)\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T06:44:41.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Bkap T\u00E0i li\u1EC7u\\SEM3\\Web API Service\\BTL Web API Service(ASP.Net Core)\\front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC)\\Areas\\Admin\\Views\\Products\\Details.cshtml",
+              "RelativeDocumentMoniker": "front_end(ASP.NET Core MVC)\\Areas\\Admin\\Views\\Products\\Details.cshtml",
+              "ToolTip": "D:\\Bkap T\u00E0i li\u1EC7u\\SEM3\\Web API Service\\BTL Web API Service(ASP.Net Core)\\front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC)\\Areas\\Admin\\Views\\Products\\Details.cshtml",
+              "RelativeToolTip": "front_end(ASP.NET Core MVC)\\Areas\\Admin\\Views\\Products\\Details.cshtml",
+              "ViewState": "AgIAACwAAAAAAAAAAAAQwEMAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T06:43:51.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Bkap T\u00E0i li\u1EC7u\\SEM3\\Web API Service\\BTL Web API Service(ASP.Net Core)\\front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC)\\Areas\\Admin\\Views\\Products\\Index.cshtml",
+              "RelativeDocumentMoniker": "front_end(ASP.NET Core MVC)\\Areas\\Admin\\Views\\Products\\Index.cshtml",
+              "ToolTip": "D:\\Bkap T\u00E0i li\u1EC7u\\SEM3\\Web API Service\\BTL Web API Service(ASP.Net Core)\\front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC)\\Areas\\Admin\\Views\\Products\\Index.cshtml",
+              "RelativeToolTip": "front_end(ASP.NET Core MVC)\\Areas\\Admin\\Views\\Products\\Index.cshtml",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAEAAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T06:34:21.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "D:\\Bkap T\u00E0i li\u1EC7u\\SEM3\\Web API Service\\BTL Web API Service(ASP.Net Core)\\front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC)\\Areas\\Admin\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "front_end(ASP.NET Core MVC)\\Areas\\Admin\\Controllers\\ProductsController.cs",
+              "ToolTip": "D:\\Bkap T\u00E0i li\u1EC7u\\SEM3\\Web API Service\\BTL Web API Service(ASP.Net Core)\\front_end(ASP.NET Core MVC)\\front_end(ASP.NET Core MVC)\\Areas\\Admin\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "front_end(ASP.NET Core MVC)\\Areas\\Admin\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAowF8AAAByAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T06:33:21.367Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

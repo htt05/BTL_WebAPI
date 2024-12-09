@@ -1,0 +1,209 @@
+﻿@model front_end_ASP.NET_Core_MVC_.Models.DataModels.Order
+
+@{
+    ViewData["Title"] = "Edit";
+}
+<style> /* Đặt chiều rộng của input bằng 100% chiều rộng của td */ td input { width: 100%; box-sizing: border-box; /* Đảm bảo padding và border được tính vào chiều rộng tổng */ border: none; /* Loại bỏ border để khớp với style bạn mong muốn */ padding: 0; /* Loại bỏ padding để khớp chính xác */ margin: 0; /* Loại bỏ margin để khớp chính xác */ } </style>
+<!-- Begin JB's Breadcrumb Area -->
+<div class="breadcrumb-area">
+    <div class="container">
+        <div class="breadcrumb-content">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li class="active">Order Detail</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- JB's Breadcrumb Area End Here -->
+<div class="container">
+    <div class="mt-3 mb-3">
+        <h4>Order</h4>
+        <hr />
+        <section class="content">
+            <!-- Default box -->
+            <div class="box">
+                <div class="box-body with-border">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-4">Customer Information</th>
+                                        <th class="col-md-8"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>@Html.DisplayNameFor(model => model.Account)</td>
+                                        <td>@Html.DisplayFor(model => model.Account.AccountName)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>@Html.DisplayNameFor(model => model.Created_at)</td>
+                                        <td>@Html.DisplayFor(model => model.Created_at)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>@Html.DisplayNameFor(model => model.OrderId)</td>
+                                        <td>@Html.DisplayFor(model => model.OrderId)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>@Html.DisplayNameFor(model => model.Status)</td>
+                                        <td> @switch (Model.Status)
+                                            {
+                                                case 0:
+                                                            <span>Not processed</span>
+                                                    break;
+                                                case 1:
+                                                            <span>Preparing order</span>
+                                                    break;
+                                                case 2:
+                                                            <span>In transit</span>
+                                                    break;
+                                                case 3:
+                                                            <span>Delivered</span>
+                                                    break;
+                                                default:
+                                                                    <span>Canceled</span>
+                                                    break;
+                                            }
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-6">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-4">Shipping Information</th>
+                                        <th class="col-md-8"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @if (Model.Status == 0)
+                                    {
+                                            <form asp-action="Edit" asp-controller="Orders" asp-route-id="@Model?.OrderId" method="post">
+                                                <input type="hidden" asp-for="Account"/>
+                                                <input type="hidden" asp-for="Created_at"/>
+                                                <input type="hidden" asp-for="OrderId" />
+                                                <input type="hidden" asp-for="ToltalPrice" />
+                                                <input type="hidden" asp-for="AccountId" />
+                                                <input type="hidden" asp-for="Status"/>
+                                            <tr>
+                                                <td>@Html.DisplayNameFor(model => model.Receiver)</td>
+                                                <td><input asp-for="Receiver" style="border: none" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td>@Html.DisplayNameFor(model => model.PhoneNumber)</td>
+                                                <td><input asp-for="PhoneNumber" style="border: none" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td>@Html.DisplayNameFor(model => model.Address)</td>
+                                                <td><input asp-for="Address" style="border: none"/></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Action</td>
+                                                <td><input type="submit" style="border: none" value="Save"/></td>
+                                            </tr>
+                                            </form>
+                                    }
+                                    else
+                                    {
+                                            <tr>
+                                                <td>@Html.DisplayNameFor(model => model.Receiver)</td>
+                                                <td>@Html.DisplayFor(model => model.Receiver)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>@Html.DisplayNameFor(model => model.PhoneNumber)</td>
+                                                <td>@Html.DisplayFor(model => model.PhoneNumber)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>@Html.DisplayNameFor(model => model.Address)</td>
+                                                <td>@Html.DisplayFor(model => model.Address)</td>
+                                            </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-md-12">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th class="col-md-1">No</th>
+                                        <th class="col-md-3">Product Name</th>
+                                        <th class="col-md-2">Price</th>
+                                        <th class="col-md-2">Quantity</th>
+                                        <th class="col-md-2">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @{
+                                        foreach (var item in ViewBag.OrderDetails)
+                                        {
+                                                    <tr>
+                                                        <td>@item.OrderDetailId</td>
+                                                        <td>@item.Product.ProductName</td>
+                                                        <td><b class="text-red">@($"{item.Product.SalePrice:N2}")$</b></td>
+                                                        <td>@item.Quantity</td>
+                                                        <td><b class="text-red">@($"{(item.Product.SalePrice * item.Quantity):N2}")$</b></td>
+                                                    </tr>
+                                        }
+                                    }
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="4"><b>Total</b></td>
+                                        <td>
+                                            <b class="text-red">
+                                                @String.Format("{0:N2}", Model.ToltalPrice)$ đ
+                                            </b>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-10 mt-3">
+                            <label>@Html.DisplayNameFor(model => model.Note):</label>
+                            <p>@Html.DisplayFor(model => model.Note)</p>
+                        </div>
+                        @if (Model.Status == 0)
+                        {
+                                <div class="col-lg-2 mt-3 text-end">
+                                <a asp-action="Cancel" asp-controller="Orders" asp-route-orderId="@Model.OrderId" class="btn btn-secondary"
+                                onclick="return confirm('Are you sure you want to cancel this order?');">Cancel Order</a>
+                                </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const statusSelect = document.getElementById("statusSelect");
+
+        statusSelect.addEventListener("change", function () {
+            const selectedValue = parseInt(this.value, 10);
+            const options = Array.from(this.options);
+
+            options.forEach(option => {
+                const optionValue = parseInt(option.value, 10);
+
+                if (optionValue <= selectedValue) {
+                    option.style.display = "none";
+                } else {
+                    option.style.display = "block";
+                }
+            });
+        });
+
+        // Trigger change event on page load to filter options initially
+        statusSelect.dispatchEvent(new Event("change"));
+    });
+</script>

@@ -1,0 +1,101 @@
+﻿@model front_end_ASP.NET_Core_MVC_.Models.DataModels.Account
+@{
+    ViewData["Title"] = "Index";
+}
+<!-- Begin JB's Breadcrumb Area -->
+<div class="breadcrumb-area">
+    <div class="container">
+        <div class="breadcrumb-content">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li class="active">Login & Register</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- JB's Breadcrumb Area End Here -->
+<!-- Begin JB's Login Register Area -->
+<div class="jb-login-register_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-xs-12 col-lg-6">
+                <!-- Login Form s-->
+                <form asp-action="Index" asp-controller="Login">
+                    <div class="login-form">
+                        <h4 class="login-title">Login</h4>
+                        @Html.Raw(ViewBag.state)
+                        @Html.Raw(ViewBag.errorLogin)
+                        <span class="text-danger"></span>
+                        <div class="row">
+                            <div class="col-md-12 col-12">
+                                <label>Email Address*</label>
+                                <input type="email" placeholder="Email Address" name="email_login" value="@ViewBag.email">
+                            </div>
+                            <div class="col-12 mb--20">
+                                <label>Password</label>
+                                <input type="password" placeholder="Password" name="password">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="check-box">
+                                    <input type="checkbox" id="remember_me">
+                                    <label for="remember_me">Remember me</label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="forgotton-password_info">
+                                    <a href="#"> Forgotten pasward?</a>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button class="jb-login_btn">Login</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- Register Form s-->
+            <div class="col-sm-12 col-md-12 col-lg-6 col-xs-12">
+                <form asp-action="Register" asp-controller="Login" method="post">
+                    <input type="hidden" asp-for="Role" value="1"/>
+                    <div class="login-form">
+                        <h4 class="login-title">Register</h4>
+                        @Html.Raw(TempData["success"])
+                        @Html.Raw(@ViewBag.errorRegister)
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label>Full Name</label>
+                                <input type="text" placeholder="Full Name" asp-for="AccountName">
+                                <span asp-validation-for="AccountName" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-12">
+                                <label>Phone Number</label>
+                                <input type="text" placeholder="Phone Number" asp-for="PhoneNumber">
+                                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-12">
+                                <label>Email Address*</label>
+                                <input type="email" placeholder="Email Address" asp-for="Email">
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6">
+                                <label>Password</label>
+                                <input type="password" placeholder="Password" asp-for="Password">
+                                <span asp-validation-for="Password" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6">
+                                <label>Confirm Password</label>
+                                <input type="password" placeholder="Confirm Password" asp-for="ConfirmPassWord">
+                                <span asp-validation-for="ConfirmPassWord" class="text-danger"></span>
+                            </div>
+                            <div class="col-12">
+                                <button class="jb-register_btn">Register</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- JB's Login Register Area  End Here -->
+

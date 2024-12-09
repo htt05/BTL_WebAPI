@@ -1,0 +1,132 @@
+﻿@model IEnumerable<front_end_ASP.NET_Core_MVC_.Models.DataModels.Cart>
+
+@{
+    ViewData["Title"] = "Index";
+    double subTotal = 0; // Khởi tạo biến subTotal
+}
+
+<!-- Begin JB's Breadcrumb Area -->
+<div class="breadcrumb-area">
+    <div class="container">
+        <div class="breadcrumb-content">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li class="active">Cart</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- JB's Breadcrumb Area End Here -->
+<!-- Begin JB's Cart Area -->
+<div class="jb-cart-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="table-content table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th class="jb-product-remove">remove</th>
+                                <th class="jb-product-thumbnail">images</th>
+                                <th class="cart-product-name">Product</th>
+                                <th class="jb-product-price">Unit Price</th>
+                                <th class="jb-product-quantity">Quantity</th>
+                                <th class="jb-product-subtotal">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td class="jb-product-remove">
+                                        <a asp-action="Remove" asp-controller="Cart" asp-route-id="@item.ProductId">
+                                            <i class="fa fa-trash" title="Remove"></i>
+                                        </a>
+                                    </td>
+                                    <td class="jb-product-thumbnail"><a href="javascript:void(0)"><img src="@item.Picture" alt="JB's Cart Thumbnail" width="70px"></a></td>
+                                    <td class="jb-product-name"><a href="javascript:void(0)">@item.Name</a></td>
+                                    <td class="jb-product-price"><span class="amount">$@String.Format("{0:N2}", item.Price)</span></td>
+                                    <td class="quantity">
+                                        <form id="update-form" method="get">
+                                            <input type="hidden" name="id" value="@item.ProductId" />
+                                            <div class="cart-plus-minus">
+                                                <input class="cart-plus-minus-box" value="@item.Quantity" type="text" name="quantity" id="quantity-@item.ProductId">
+                                                <div class="dec qtybutton" data-product-id="@item.ProductId"><i class="fa fa-angle-down"></i></div>
+                                                <div class="inc qtybutton" data-product-id="@item.ProductId"><i class="fa fa-angle-up"></i></div>
+                                            </div>
+                                        </form>
+                                    </td>
+                                    <td class="product-subtotal"><span class="amount" id="total-price-@item.ProductId">$@String.Format("{0:N2}", item.Total)</span></td>
+                                </tr>
+                                subTotal += item.Total.GetValueOrDefault();
+
+                            }
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="cart-page-total">
+                                <a asp-action="Clear" asp-controller="Cart" >Clear Cart</a>
+                            </div>
+                            <div class="cart-page-total">
+                                <a asp-action="Create" asp-controller="Orders" >Proceed to checkout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            function updateCart(productId, quantity) {
+                $.ajax({
+                    url: '@Url.Action("Update", "Cart")',
+                    type: 'GET',
+                    data: {
+                        id: productId,
+                        quantity: quantity
+                    },
+                    success: function (result) {
+                        // Cập nhật DOM mà không cần reload lại trang
+                        $('#quantity-' + productId).val(quantity);
+                        $('#total-price-' + productId).text('$' + parseFloat(result.updatedPrice).toFixed(2));
+                    },
+                    error: function (xhr, status, error) {
+                        console.error("Cập nhật thất bại: " + error);
+                    }
+                });
+            }
+
+            $('.cart-plus-minus-box').on('input', function () {
+                var productId = $(this).closest('.cart-plus-minus').find('.qtybutton').data('product-id');
+                var quantity = $(this).val();
+                updateCart(productId, quantity);
+            });
+
+            $('.qtybutton').click(function () {
+                var $input = $(this).siblings('.cart-plus-minus-box');
+                var currentValue = parseInt($input.val());
+                var newValue = $(this).hasClass('inc') ? currentValue : currentValue;
+
+                if (newValue < 1) newValue = 1;
+
+                // Tắt tạm thời sự kiện 'input' trước khi cập nhật giá trị
+                $input.off('input');
+                $input.val(newValue);
+                $input.on('input', function () {
+                    var productId = $(this).closest('.cart-plus-minus').find('.qtybutton').data('product-id');
+                    var quantity = $(this).val();
+                    updateCart(productId, quantity);
+                });
+                // Kích hoạt sự kiện 'input' một lần sau khi cập nhật giá trị
+                $input.trigger('input');
+            });
+        });
+    </script>
+}

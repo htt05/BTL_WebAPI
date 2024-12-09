@@ -1,0 +1,79 @@
+﻿@model X.PagedList.IPagedList<front_end_ASP.NET_Core_MVC_.Models.DataModels.Category>
+@using X.PagedList.Mvc.Core
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!-- Content Header -->
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-6">
+                <h1>Index</h1>
+                <a asp-action="Create" class="btn btn-outline-secondary">Create New</a>
+            </div>
+            <div class="col-6">
+                <form class="form-inline float-right" asp-action="Index" asp-controller="Categories" asp-area="Admin">
+                    <div class="input-group input-group-sm">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search" name="searchName" value="@ViewBag.searchName">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div><p>@TempData["success"]</p></div>
+    </div>
+</div>
+<!-- /.content-header -->
+<!-- Main content -->
+<div class="container-fluid">
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Category Name</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.CategoryName)</td>
+                    <td>
+                        @if (item.Status)
+                        {
+                            <span class="badge badge-primary">Enable</span>
+                        }
+                        else
+                        {
+                            <span class="badge badge-warning">Disable</span>
+                        }
+                    </td>
+                    <td>
+                        <div class="btn-group" role="group">
+                            <a asp-action="Edit" asp-route-id="@item.CategoryId" class="btn btn-outline-success">Edit</a>
+                            <a asp-action="Delete" asp-route-id="@item.CategoryId" class="btn btn-outline-danger">Delete</a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="d-flex justify-content-center">
+        @Html.PagedListPager(
+                 Model,
+                 page => Url.Action("Index", "Categories", new { page = page, searchName = ViewBag.searchName }),
+                 new PagedListRenderOptions
+        {
+            LiElementClasses = new[] { "page-item" },
+            PageClasses = new[] { "page-link", "btn", "btn-primary" }
+        })
+    </div>
+</div>

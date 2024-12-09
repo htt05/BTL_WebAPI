@@ -1,0 +1,92 @@
+﻿@model front_end_ASP.NET_Core_MVC_.Models.DataModels.Product
+
+@{
+    ViewData["Title"] = "Details";
+}
+<style>
+    .img-container {
+        position: relative;
+        width: 100%;
+    }
+
+        .img-container img {
+            width: 100%;
+            transition: 0.3s;
+        }
+
+        .img-container .trash-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            color: red;
+            font-size: 2em;
+            transition: opacity 0.3s;
+        }
+
+        .img-container:hover img {
+            filter: blur(3px);
+        }
+
+        .img-container:hover .trash-icon {
+            opacity: 1;
+        }
+
+</style>
+
+<h1>Details</h1>
+
+<div class="container-fluid">
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Picture</th>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Sale Price</th>
+                <th>Discount</th>
+                <th>Product Count</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td>
+                        <img src="@Model.Picture" alt="Picture" width="100px" />
+                    </td>
+                <td>@Model.ProductId</td>
+                <td>@Model.ProductName</td>
+                <td>@Model.Category.CategoryName</td>
+                <td>@String.Format("{0:N2}", Model.Price)$</td>
+                    <td>@String.Format("{0:N2}", Model.SalePrice)$</td>
+                <td>@Model.Discount</td>
+                <td>@Model.ProductCount</td>
+                    <td>
+                        @if (Model.Status == 0)
+                        {
+                            <span class="badge badge-warning">Sold out</span>
+                        }
+                        else if (Model.Status == 1)
+                        {
+                            <span class="badge badge-info">Available</span>
+                        }
+                    </td>
+                </tr>
+        </tbody>
+    </table>
+</div>
+<p>Photo Details</p>
+<div class="card-body">
+    <div class="row">
+        @foreach (var item in Model.ProductImgs)
+        {
+            <div class="col-sm-3 img-container">
+                <img src="@item.Picture" class="img-fluid mb-2" alt="Product Image" />
+                <a asp-action="Delete" asp-area="Admin" asp-controller="ProductImgs" asp-route-id="@item.ProductImgId"><i class="fa fa-trash trash-icon"></i></a>
+            </div>
+        }
+    </div>
+</div>

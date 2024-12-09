@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Bkap Tài liệu\\SEM3\\Web API Service\\BTL Web API Service(ASP.Net Core)\\back_end(ASP.NET Core Web API)\\back_end\\wwwroot\\image\\product\\1.jpg",
+      "PackagePath": "staticwebassets\\image\\product\\1.jpg"
+    },
+    {
+      "Id": "D:\\Bkap Tài liệu\\SEM3\\Web API Service\\BTL Web API Service(ASP.Net Core)\\back_end(ASP.NET Core Web API)\\back_end\\wwwroot\\image\\product\\2.jpg",
+      "PackagePath": "staticwebassets\\image\\product\\2.jpg"
+    },
+    {
+      "Id": "D:\\Bkap Tài liệu\\SEM3\\Web API Service\\BTL Web API Service(ASP.Net Core)\\back_end(ASP.NET Core Web API)\\back_end\\wwwroot\\image\\product\\photo-detail\\2.jpg",
+      "PackagePath": "staticwebassets\\image\\product\\photo-detail\\2.jpg"
+    },
+    {
+      "Id": "D:\\Bkap Tài liệu\\SEM3\\Web API Service\\BTL Web API Service(ASP.Net Core)\\back_end(ASP.NET Core Web API)\\back_end\\wwwroot\\image\\product\\photo-detail\\3.jpg",
+      "PackagePath": "staticwebassets\\image\\product\\photo-detail\\3.jpg"
+    },
+    {
+      "Id": "D:\\Bkap Tài liệu\\SEM3\\Web API Service\\BTL Web API Service(ASP.Net Core)\\back_end(ASP.NET Core Web API)\\back_end\\wwwroot\\image\\product\\photo-detail\\4.jpg",
+      "PackagePath": "staticwebassets\\image\\product\\photo-detail\\4.jpg"
+    },
+    {
+      "Id": "D:\\Bkap Tài liệu\\SEM3\\Web API Service\\BTL Web API Service(ASP.Net Core)\\back_end(ASP.NET Core Web API)\\back_end\\wwwroot\\image\\product\\photo-detail\\5.jpg",
+      "PackagePath": "staticwebassets\\image\\product\\photo-detail\\5.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.back_end.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.back_end.props",
+      "PackagePath": "build\\back_end.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.back_end.props",
+      "PackagePath": "buildMultiTargeting\\back_end.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.back_end.props",
+      "PackagePath": "buildTransitive\\back_end.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

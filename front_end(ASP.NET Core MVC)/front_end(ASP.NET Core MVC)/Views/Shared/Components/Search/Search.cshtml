@@ -1,0 +1,10 @@
+﻿<div class="col-xl-7 col-lg-6 col-md-5">
+    <div class="header-search_area">
+        <form asp-action="Shop" class="header-search_box" asp-controller="Page" method="get">
+            <input type="hidden" name="categoryId" value="@ViewBag.id" />
+            <input type="hidden" name="sort" value="@ViewBag.sort" />
+            <input class="jb-search_input" type="text" placeholder="Enter your search key ..." name="searchName" value="@ViewBag.searchName" />
+            <button class="jb-search_btn" type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+</div>

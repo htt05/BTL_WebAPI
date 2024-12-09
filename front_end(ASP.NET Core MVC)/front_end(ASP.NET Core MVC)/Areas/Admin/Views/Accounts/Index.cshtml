@@ -1,0 +1,83 @@
+﻿@model X.PagedList.IPagedList<front_end_ASP.NET_Core_MVC_.Models.DataModels.Account>
+@using X.PagedList.Mvc.Core
+@{
+    ViewData["Title"] = "Index";
+}
+<!-- Content Header (Page header) -->
+
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-6">
+                <h1>Index</h1>
+                <span>
+                    <a asp-action="Create" class="btn btn-outline-secondary">Create New</a>
+                </span>
+            </div>
+            <div class="col-6">
+                <form class="form-inline ml-3 float-sm-right" asp-action="Index" asp-controller="Accounts" asp-area="Admin">
+                    <div class="input-group input-group-sm">
+                        <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search" name="searchName" value="@ViewBag.searchName">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div><p>@TempData["success"]</p></div>
+    </div>
+</div>
+<!-- /.content-header -->
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Account Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Total Orders</th>
+            <th>Role</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.AccountName)</td>
+                <td>@Html.DisplayFor(modelItem => item.Email)</td>
+                <td>@Html.DisplayFor(modelItem => item.PhoneNumber)</td>
+                <td>@Html.DisplayFor(modelItem => item.Orders.Count)</td>
+                <td>
+                    @if (item.Role == 0)
+                    {
+                        <span class="badge badge-primary">Admin</span>
+                    }
+                    else if (item.Role == 1)
+                    {
+                        <span class="badge badge-secondary">User</span>
+                    }
+                </td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <a asp-action="Edit" asp-route-id="@item.AccountId" class="btn btn-outline-success">Edit</a>
+                        <a asp-action="Delete" asp-route-id="@item.AccountId" class="btn btn-outline-danger">Delete</a>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div class="d-flex justify-content-center">
+    @Html.PagedListPager(
+            Model,
+            page => Url.Action("Index", "Accounts", new { page = page, searchName = ViewBag.searchName }),
+            new PagedListRenderOptions
+    {
+        LiElementClasses = new[] { "page-item" },
+        PageClasses = new[] { "page-link", "btn", "btn-primary" }
+    })
+</div>
+

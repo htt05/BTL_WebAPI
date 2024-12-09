@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\front_end(ASP.NET Core MVC).props" />
+</Project>

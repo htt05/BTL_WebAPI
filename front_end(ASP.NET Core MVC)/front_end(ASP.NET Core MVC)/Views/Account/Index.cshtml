@@ -1,0 +1,135 @@
+﻿@model front_end_ASP.NET_Core_MVC_.Models.DataModels.Account
+<!-- Kiểm tra và hiển thị thông báo --> 
+
+<!-- Begin JB's Breadcrumb Area -->
+<div class="breadcrumb-area">
+    <div class="container">
+        <div class="breadcrumb-content">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li class="active">My Account</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- JB's Breadcrumb Area End Here -->
+<!-- Begin JB's Page Content Area -->
+<main class="page-content">
+    <!-- Begin JB's Account Page Area -->
+    <div class="account-page-area">
+        <div class="container">
+            @Html.Raw(ViewBag.state)
+            <div class="row">
+                <div class="col-lg-3">
+                    <ul class="nav myaccount-tab-trigger" id="account-page-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="account-orders-tab" data-bs-toggle="tab" href="#account-orders" role="tab" aria-controls="account-orders" aria-selected="true">Orders</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="account-details-tab" data-bs-toggle="tab" href="#account-details" role="tab" aria-controls="account-details" aria-selected="false">Account Details</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="account-logout-tab" asp-action="Logout" asp-controller="Login" role="tab" aria-selected="false">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-9">
+                    <div class="tab-content myaccount-tab-content" id="account-page-tab-content">
+                        <div class="tab-pane fade show active" id="account-orders" role="tabpanel" aria-labelledby="account-orders-tab">
+                            <div class="myaccount-orders">
+                                <h4 class="small-title">MY ORDERS</h4>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-hover">
+                                        <tbody>
+                                            <tr>
+                                                <th>ORDER</th>
+                                                <th>DATE</th>
+                                                <th>STATUS</th>
+                                                <th>TOTAL</th>
+                                                <th></th>
+                                            </tr>
+                                            @foreach (var item in Model.Orders)
+                                            {
+                                                <tr>
+                                                    <td><a class="account-order-id" href="#">@item.OrderId</a></td>
+                                                    <td>@item.Created_at.ToString("MM/dd/yyyy hh:mm")</td>
+                                                    <td>
+                                                        @switch (item.Status)
+                                                        {
+                                                            case 0:
+                                                                <span>Not processed</span>
+                                                                break;
+                                                            case 1:
+                                                                <span>Preparing order</span>
+                                                                break;
+                                                            case 2:
+                                                                <span>In transit</span>
+                                                                break;
+                                                            case 3:
+                                                                <span>Delivered</span>
+                                                                break;
+                                                                default:
+                                                                <span>Canceled</span>
+                                                                break;
+                                                        }
+                                                    </td>
+                                                    <td>$@String.Format("{0:N2}", item.ToltalPrice)</td>
+                                                    <td><a asp-action="Edit" asp-controller="Orders" asp-route-orderId="@item.OrderId" class="jb-btn jb-btn_dark jb-btn_sm"><span>View</span></a></td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="account-details" role="tabpanel" aria-labelledby="account-details-tab">
+                            <div class="myaccount-details">
+                                <form asp-action="Edit" asp-controller="Account" class="jb-form" method="post">
+                                    <input type="hidden" asp-for="AccountId" />
+                                    <input type="hidden" asp-for="Role" />
+                                    @Html.Raw(ViewBag.error)
+                                    <div class="jb-form-inner">
+                                        <div class="single-input">
+                                            <label for="account-details-name">Full Name*</label>
+                                            <input asp-for="AccountName" id="account-details-name" class="form-control">
+                                            <span asp-validation-for="AccountName" class="text-danger"></span>
+                                        </div>
+                                        <div class="single-input">
+                                            <label for="account-details-email">Email*</label>
+                                            <input type="email" asp-for="Email" id="account-details-email" class="form-control">
+                                            <span asp-validation-for="Email" class="text-danger">@ViewBag.errorEmail</span>
+                                        </div>
+                                        <div class="single-input">
+                                            <label for="account-details-phone">Phone Number*</label>
+                                            <input type="text" asp-for="PhoneNumber" id="account-details-phone" class="form-control">
+                                            <span asp-validation-for="PhoneNumber" class="text-danger">@ViewBag.phoneNumber</span>
+                                        </div>
+                                        <div class="single-input">
+                                            <label for="account-details-oldpass">Current Password (leave blank to leave unchanged)</label>
+                                            <input type="password" name="oldPassword" id="account-details-oldpass" class="form-control">
+                                            <span class="text-danger">@ViewBag.errorOldPassword</span>
+                                        </div>
+                                        <div class="single-input">
+                                            <label for="account-details-newpass">New Password (leave blank to leave unchanged)</label>
+                                            <input type="password" asp-for="Password" id="account-details-newpass" class="form-control">
+                                        </div>
+                                        <div class="single-input">
+                                            <label for="account-details-confpass">Confirm New Password</label>
+                                            <input type="password" asp-for="ConfirmPassWord" id="account-details-confpass" class="form-control">
+                                            <span class="text-danger">@ViewBag.errorConfirmPassword</span>
+                                        </div>
+                                        <div class="single-input">
+                                            <button class="jb-btn jb-btn_dark" type="submit"><span>SAVE CHANGES</span></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JB's Account Page Area End Here -->
+</main>
+<!-- JB's Page Content Area End Here -->

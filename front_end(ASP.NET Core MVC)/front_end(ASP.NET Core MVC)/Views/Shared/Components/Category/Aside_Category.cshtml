@@ -1,0 +1,16 @@
+﻿@model IEnumerable<front_end_ASP.NET_Core_MVC_.Models.DataModels.Category>
+<ul>
+    <li>
+        <a asp-action="Shop" asp-controller="Page">
+            All
+        </a>
+    </li>
+    @foreach (var c in Model)
+    {
+        <li>
+            <a asp-action="Shop" asp-controller="Page" asp-route-categoryId="@c.CategoryId" asp-route-searchName="@ViewBag.searchName" asp-route-sort="@ViewBag.sort">
+                @c.CategoryName
+            </a>
+        </li>
+    }
+</ul>

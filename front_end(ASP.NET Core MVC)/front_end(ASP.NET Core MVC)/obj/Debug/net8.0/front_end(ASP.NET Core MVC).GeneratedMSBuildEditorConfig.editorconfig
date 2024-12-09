@@ -1,0 +1,203 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = front_end_ASP.NET_Core_MVC_
+build_property.RootNamespace = front_end_ASP.NET_Core_MVC_
+build_property.ProjectDir = D:\Bkap Tài liệu\SEM3\Web API Service\BTL Web API Service(ASP.Net Core)\front_end(ASP.NET Core MVC)\front_end(ASP.NET Core MVC)\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Bkap Tài liệu\SEM3\Web API Service\BTL Web API Service(ASP.Net Core)\front_end(ASP.NET Core MVC)\front_end(ASP.NET Core MVC)
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Areas/Admin/Views/Accounts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNjb3VudHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Areas/Admin/Views/Accounts/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNjb3VudHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Areas/Admin/Views/Accounts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNjb3VudHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Areas/Admin/Views/Accounts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNjb3VudHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Areas/Admin/Views/Categories/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Areas/Admin/Views/Categories/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Areas/Admin/Views/Categories/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Areas/Admin/Views/Categories/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Areas/Admin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Areas/Admin/Views/Home/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Areas/Admin/Views/Orders/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Areas/Admin/Views/Orders/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Areas/Admin/Views/Products/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Areas/Admin/Views/Products/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Areas/Admin/Views/Products/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Areas/Admin/Views/Products/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Areas/Admin/Views/Products/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Areas/Admin/Views/Shared/Layout/Aside.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXExheW91dFxBc2lkZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Areas/Admin/Views/Shared/Layout/Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXExheW91dFxGb290ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Areas/Admin/Views/Shared/Layout/Header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXExheW91dFxIZWFkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Views/Account/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Views/Cart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Views/Orders/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Views/Orders/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Views/Page/About_Us.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxBYm91dF9Vcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Views/Page/Blog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxCbG9nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Views/Page/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxDb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Views/Page/FAQ.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxGQVEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Views/Page/Shop.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxTaG9wLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Views/Page/Single_Product.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZVxTaW5nbGVfUHJvZHVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Views/Shared/Components/Category/Aside_Category.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2F0ZWdvcnlcQXNpZGVfQ2F0ZWdvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Views/Shared/Components/HeaderTop/HeaderTop.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcSGVhZGVyVG9wXEhlYWRlclRvcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Views/Shared/Components/MiniCart/MiniCart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWluaUNhcnRcTWluaUNhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Views/Shared/Components/Search/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2VhcmNoXFNlYXJjaC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Bkap Tài liệu/SEM3/Web API Service/BTL Web API Service(ASP.Net Core)/front_end(ASP.NET Core MVC)/front_end(ASP.NET Core MVC)/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-nnkvi3lji5
